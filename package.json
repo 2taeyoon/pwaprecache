@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-react-app": "latest",
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "packageManager": "yarn@3.6.0"
+}

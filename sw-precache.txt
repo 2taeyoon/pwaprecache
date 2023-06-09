@@ -1,0 +1,23 @@
+https://www.npmjs.com/package/sw-precache
+
+npm install --save-dev sw-precache
+npm install --global sw-precache
+
+yarn add --dev sw-precache
+yarn global add sw-precache
+
+- 리소스를 사전 캐시 가능한 모듈을 만들어주는 라이브러리
+
+
+sw-config.js 파일 생성해야 함
+
+module.exports = {
+    staticFileGlobs: [
+        'index.html',
+        'css/*.css',
+        'img/**.*',
+        'js/**/*'
+    ]
+};
+
+sw-precache --config sw-config.js

@@ -1,0 +1,22 @@
+{
+    "short_name":"pwaTodo",
+    "name":"PWA Practice",
+    "background_color":"#F1C0E8",
+    "icons": [
+        {
+            "src": "img/192x.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/512x.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url":"./index.html",
+    "display":"standalone",
+    "theme_color":"#F1C0E8",
+    "orientation":"portrait",
+    "description":"PWA PRACTICE MANIFEST.JSON"
+}

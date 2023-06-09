@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta mame="apple-mobile-web-app-capable" content="yes">
+    <title>일정관리</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <script defer src="js/main2.js"></script>.
+    <script>
+        if ("serviceWorker" in navigator) {
+            //서브스워커가 있을 때(서비스워커 지원여부)
+            navigator.serviceWorker.register('service-worker.js')
+                .then((success) => {
+                    console.log("serviceWorker 설치에 성공했습니다!", success)
+                })
+                .catch((error) => {
+                    console.log("serviceWorker 설치 실패 ㅠㅠ", error)
+                })
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <input type="text" placeholder="할 일을 입력하세요" required>
+            <button type="submit">Add</button>
+        </form>
+        <div class="blocks">
+            <div class="block">
+                <h2>🚩 To do</h2>
+                <div id="todo" class="list">
+                    <div id="" class="item">
+                        입력내용1
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h2>🚴‍♀️ Doing</h2>
+                <div id="doing" class="list">
+
+                </div>
+            </div>
+            <div class="block">
+                <h2>✅ Done</h2>
+                <div id="done" class="list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
